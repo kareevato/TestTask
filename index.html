@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FixIt Pro | Professional Appliance Repair Services USA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header__inner">
+            <a href="#" class="logo">
+                <span class="logo__icon">⚙</span>
+                <span class="logo__text">FixIt<span class="logo__accent">Pro</span></span>
+            </a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="#hero" class="nav__link">Home</a></li>
+                    <li><a href="#services" class="nav__link">Services</a></li>
+                    <li><a href="#about" class="nav__link">About</a></li>
+                    <li><a href="#request" class="nav__link">Request Service</a></li>
+                    <li><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="#request" class="btn btn--primary header__cta">Get a Quote</a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="container hero__content">
+                <h1 class="hero__title">Expert Appliance Repair<br><span class="hero__highlight">When You Need It</span></h1>
+                <p class="hero__subtitle">Licensed, insured, and trusted by thousands of homeowners across the USA. Same-day service available in most areas.</p>
+                <div class="hero__actions">
+                    <a href="#request" class="btn btn--primary btn--lg">Schedule Repair</a>
+                    <a href="tel:+18005551234" class="btn btn--outline btn--lg">Call (800) 555-1234</a>
+                </div>
+            </div>
+            <div class="hero__decoration"></div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section__badge">What We Fix</span>
+                    <h2 class="section__title">Our Repair Services</h2>
+                    <p class="section__subtitle">From refrigerators to washing machines, our certified technicians handle all major household appliances with precision and care.</p>
+                </div>
+                <div class="services__grid">
+                    <article class="service-card">
+                        <div class="service-card__icon">❄️</div>
+                        <h3 class="service-card__title">Refrigerator & Freezer</h3>
+                        <p class="service-card__desc">Cooling issues, ice maker repairs, compressor problems, and seal replacements. We service all brands including Samsung, LG, Whirlpool, and GE.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-card__icon">🧺</div>
+                        <h3 class="service-card__title">Washer & Dryer</h3>
+                        <p class="service-card__desc">Spin cycle failures, drainage problems, heating element issues, and drum repairs. Front-load and top-load models supported.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-card__icon">🍳</div>
+                        <h3 class="service-card__title">Range & Oven</h3>
+                        <p class="service-card__desc">Gas and electric range repairs, oven temperature calibration, burner replacements, and ignition system fixes.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-card__icon">🍽️</div>
+                        <h3 class="service-card__title">Dishwasher & Disposal</h3>
+                        <p class="service-card__desc">Leak repairs, pump replacements, spray arm fixes, and garbage disposal installation and repair services.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container about__inner">
+                <div class="about__content">
+                    <span class="section__badge">Why Choose Us</span>
+                    <h2 class="section__title">Trusted Across America</h2>
+                    <p class="about__text">With over 15 years of experience, FixIt Pro has become the go-to choice for homeowners who demand quality, transparency, and reliability. Our technicians are factory-trained and background-checked.</p>
+                    <ul class="about__features">
+                        <li>✓ Same-day & next-day appointments</li>
+                        <li>✓ Upfront pricing — no hidden fees</li>
+                        <li>✓ 90-day warranty on all repairs</li>
+                        <li>✓ Licensed & fully insured</li>
+                    </ul>
+                </div>
+                <div class="about__visual">
+                    <img src="about-technician.jpg" alt="FixIt Pro technician repairing a refrigerator" class="about__image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Request Service Form -->
+        <section id="request" class="request-form-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section__badge">Get Started</span>
+                    <h2 class="section__title">Request a Service</h2>
+                    <p class="section__subtitle">Fill out the form below and we'll contact you within 2 hours to schedule your repair. All fields are required.</p>
+                </div>
+                <form id="service-form" class="service-form" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required minlength="2" maxlength="50" placeholder="John">
+                            <span class="form-error" id="firstName-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required minlength="2" maxlength="50" placeholder="Smith">
+                            <span class="form-error" id="lastName-error"></span>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="john.smith@example.com">
+                            <span class="form-error" id="email-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="(555) 123-4567">
+                            <span class="form-error" id="phone-error"></span>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="address">Street Address *</label>
+                            <input type="text" id="address" name="address" required minlength="5" placeholder="123 Main St, City, State ZIP">
+                            <span class="form-error" id="address-error"></span>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="appliance">Appliance Type *</label>
+                            <select id="appliance" name="appliance" required>
+                                <option value="">Select appliance...</option>
+                                <option value="refrigerator">Refrigerator / Freezer</option>
+                                <option value="washer">Washer</option>
+                                <option value="dryer">Dryer</option>
+                                <option value="range">Range / Oven</option>
+                                <option value="dishwasher">Dishwasher</option>
+                                <option value="disposal">Garbage Disposal</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span class="form-error" id="appliance-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="brand">Brand (optional)</label>
+                            <input type="text" id="brand" name="brand" placeholder="e.g., Samsung, LG">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Describe the Issue *</label>
+                        <textarea id="description" name="description" required minlength="20" rows="4" placeholder="Please describe what's wrong with your appliance and when the problem started..."></textarea>
+                        <span class="form-error" id="description-error"></span>
+                    </div>
+                    <div class="form-group form-group--checkbox">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <span>I agree to the <a href="#terms-modal" class="link">Terms of Service</a> and <a href="#privacy-modal" class="link">Privacy Policy</a> *</span>
+                        </label>
+                        <span class="form-error" id="terms-error"></span>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--lg btn--full">Submit Request</button>
+                </form>
+                <div id="form-success" class="form-success" hidden>
+                    <div class="form-success__icon">✓</div>
+                    <h3>Request Received!</h3>
+                    <p>Thank you for choosing FixIt Pro. We'll contact you within 2 hours to confirm your appointment.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="#" class="logo">
+                        <span class="logo__icon">⚙</span>
+                        <span class="logo__text">FixIt<span class="logo__accent">Pro</span></span>
+                    </a>
+                    <p class="footer__tagline">Your trusted appliance repair partner across the United States.</p>
+                    <p class="footer__phone">📞 (800) 555-1234</p>
+                </div>
+                <div class="footer__links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#request">Request Service</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer__links">
+                    <h4>Service Areas</h4>
+                    <ul>
+                        <li>California</li>
+                        <li>Texas</li>
+                        <li>Florida</li>
+                        <li>New York</li>
+                        <li>All 50 States</li>
+                    </ul>
+                </div>
+                <div class="footer__hours">
+                    <h4>Business Hours</h4>
+                    <p>Mon–Fri: 7am – 7pm</p>
+                    <p>Sat: 8am – 5pm</p>
+                    <p>Sun: Emergency only</p>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 FixIt Pro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
